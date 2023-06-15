@@ -1,11 +1,11 @@
 import { Container as Content } from "semantic-ui-react";
 import "./Container.scss";
 
-export default function Container(children, bg) {
+export default function Container({children}) {
     return (
-        <div className={bg ? "" : "container-bg"}>
+        <div className="container-bg">
             <Content>{children}</Content>
         </div>
     );
-
+    
 }
