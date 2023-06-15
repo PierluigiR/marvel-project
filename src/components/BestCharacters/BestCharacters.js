@@ -5,14 +5,7 @@ import "./BestCharacters.scss";
 
 export default function BestCharacters() {
     return(
-        <Container>
-        <div>
-            <Header>
-            Los mejores personajes de Marvel de los que todo el mundo habla
-            </Header>
-        </div>
-        </Container>
-        /*<Container>
+       <Container>
             <div className="best-characters"></div>
             <Grid columns={2} divided="vertically">
                 <Grid.Column>
@@ -28,6 +21,6 @@ export default function BestCharacters() {
                     <Image src={marvelImage} alt="Marvel APP"/>
                 </Grid.Column>
             </Grid>
-        </Container>*/
+        </Container>
     );
 }
