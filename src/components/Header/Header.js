@@ -1,13 +1,13 @@
 import './Header.scss';
 import { Menu } from 'semantic-ui-react';
 import { useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
 export default function Header() {
     const currentPath = useLocation();
     console.log(currentPath);
     const finalCurrentPath = currentPath.pathname.replace("/", "");
-    const {activeItem, setActiveItem} =useState("");
+    const {activeItem, setActiveItem} =useState("finalCurrentPath");
     const history = useHistory();
     const itemClick = (e, {name}) => {
         setActiveItem (name);
