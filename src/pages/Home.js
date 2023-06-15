@@ -1,10 +1,10 @@
-import Header from "../components/Header/Header";
+import BestCharacters from "../components/BestCharacters/BestCharacters";
 
 export default function Home() {
     return (
         <div>
-            <p>Estamos en Home</p>
-            <Header />
+           <BestCharacters />
+            
         </div>
     );
 }
