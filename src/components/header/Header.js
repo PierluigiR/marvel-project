@@ -1,7 +1,7 @@
 import './Header.scss';
 import { Menu } from 'semantic-ui-react';
 import { useState } from 'react';
-import { useHistory, useLocation } from 'react-router';
+import { useHistory, useLocation } from 'react-router-dom';
 
 export default function Header() {
     const currentPath = useLocation();
