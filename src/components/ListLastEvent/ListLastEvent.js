@@ -2,6 +2,7 @@ import { Card, Header } from "semantic-ui-react";
 import Container from "../Container/Container";
 import "./ListLastEvent.scss";
 import useFetch from "../Hooks/useFetch";
+import LastEvents from "../LastEvents/LastEvents";
 
     //const lastEventFetch= useFetch(`${process.env.REACT_APP_URL_BASE}`)
     //console.log(process.env.REACT_APP_URL_BASE);
@@ -13,11 +14,7 @@ export default function ListLastEvent() {
             <Header size="large">Ultimos eventos</Header>
             <Container bg="light">
                 <Card.Group itemsPerRow={5}>
-                    <p>Los eventos...</p>
-                    <p>Los eventos...</p>
-                    <p>Los eventos...</p>
-                    <p>Los eventos...</p>
-                    <p>Los eventos...</p>
+                    <LastEvents />
                 </Card.Group>
             </Container>
         </div>
