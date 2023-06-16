@@ -7,9 +7,9 @@ export default function Header() {
     const currentPath = useLocation();
     console.log(currentPath);
     const finalCurrentPath = currentPath.pathname.replace("/", "");
-    const {activeItem, setActiveItem} =useState("finalCurrentPath");
     const history = useHistory();
-    const itemClick = (e, {name}) => {
+    const {activeItem, setActiveItem} =useState("finalCurrentPath");
+    const handleItemClick = (e, {name}) => {
         setActiveItem (name);
         history.push(name);
     };
@@ -17,9 +17,9 @@ export default function Header() {
     return(
         <div className='header-menu'>
             <Menu secondary>
-                <Menu.Item name='Inicio' active={activeItem==="Inicio"} onClick={itemClick} />
-                <Menu.Item name='Comics' active={activeItem==="Comics"}onClick={itemClick} />
-                <Menu.Item name='Series' active={activeItem==="Series"}onClick={itemClick} />
+                <Menu.Item name='Inicio' active={activeItem==="Inicio"} onClick={handleItemClick} />
+                <Menu.Item name='Comics' active={activeItem==="Comics"} onClick={handleItemClick} />
+                <Menu.Item name='Series' active={activeItem==="Series"} onClick={handleItemClick} />
             </Menu>
         </div>
     );
