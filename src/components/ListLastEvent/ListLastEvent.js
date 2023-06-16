@@ -14,7 +14,7 @@ export default function ListLastEvent() {
             <Header size="large">Ultimos eventos</Header>
             <Container bg="light">
                 <Card.Group itemsPerRow={5}>
-                    <LastEvents />
+                    <LastEvents lastEventsFetch={lastEventsFetch} />
                 </Card.Group>
             </Container>
         </div>
