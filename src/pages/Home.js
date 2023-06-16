@@ -1,4 +1,4 @@
-import BestCharacters from "../components/BestCharacters/BestCharacters";
+import BestCharacters from "../components/BestCharacters";
 
 export default function Home() {
     return (
