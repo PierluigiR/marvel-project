@@ -38,6 +38,10 @@ export default function LastEvents({lastEventsFetch}) {
                     target="_blank"
                     color="black"
                     >
+                        <Button.Content visible>Ver Evento</Button.Content>
+                        <Button.Content hidden>
+                            <Icon name="arrow right"/>
+                        </Button.Content>
                     </Button>
                 </Card.Content>
             </Card>
