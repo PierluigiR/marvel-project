@@ -1,6 +1,7 @@
 import { Card, Icon, Image, Dimmer, Loader, Button } from "semantic-ui-react";
 import "./LastEvents.scss";
 
+
 export default function LastEvents({lastEventsFetch}) {
     const {loading, result} = lastEventsFetch;
     if (loading || !result) 
@@ -10,8 +11,12 @@ export default function LastEvents({lastEventsFetch}) {
             </Dimmer>
         );
     const {results}= result.data;
-    console.log(results);
-    return(
-            <div>DesdeLastEvents</div>
-    );
+        return results.map ((event, index)=>(
+
+            <Card key={index} className='last-event'>
+                <Image
+                    src={`${event.thumbnail.path}.${event.thumbnail.extension}`}
+                    wrapped ui={false}/>
+            </Card>
+        )); 
 }
