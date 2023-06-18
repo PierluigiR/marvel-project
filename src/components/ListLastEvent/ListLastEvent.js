@@ -1,7 +1,7 @@
 import { Card, Header } from "semantic-ui-react";
 import Container from "../Container/Container";
 import "./ListLastEvent.scss";
-import useFetch from "../Hooks/useFetch";
+import useFetch from "../../Hooks/useFetch";
 import LastEvents from "../LastEvents/LastEvents";
 
 export default function ListLastEvent() {
