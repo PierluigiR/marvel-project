@@ -6,7 +6,7 @@ import Comics from "./pages/Comics";
 import Series from "./pages/Series";
 import Error404 from "./pages/Error404";
 import Header from "./components/Header";
-import useFetch from './components/Hooks/useFetch';
+import useFetch from "../components/Hooks/useFetch";
 
 
 function App() {
