@@ -8,9 +8,9 @@ export default function Header() {
     console.log(currentPath);
     const finalCurrentPath = currentPath.pathname.replace("/", "");
     const history = useHistory();
-    const {activeItem, setActiveItem} =useState("finalCurrentPath");
-    const handleItemClick = (e, {name}) => {
-        setActiveItem (name);
+    const [activeItem, setActiveItem] = useState("");
+    const handleItemClick = (e, { name }) => {
+        setActiveItem(name);
         history.push(name);
     };
     
