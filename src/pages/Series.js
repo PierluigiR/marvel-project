@@ -11,7 +11,7 @@ export default function Series() {
                 <div id="slide-series-image" />
                 <Grid>
                     <Grid.Column>
-                        <Container>
+                        <Container bg="light">
                             <Header as="h2">Las últimas series de Marvel</Header>
                             <ListSeries listSeries={listSeries}/>
                         </Container>
