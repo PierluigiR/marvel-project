@@ -1,4 +1,4 @@
-import { Grid, Header} from "semantic-ui-react";
+import { Grid, Header } from "semantic-ui-react";
 import Container from "../components/Container";
 import ListSeries from "../components/ListSeries";
 import useFetch from "../Hooks/useFetch";
@@ -7,7 +7,17 @@ export default function Series() {
     console.log(listSeries);
     return(
         <div>
-            <p>Estamos en Series</p>
+            <div className="series-page">
+                <div id="slide-series-image" />
+                <Grid>
+                    <Grid.Column>
+                        <Container>
+                            <Header as="h2">Las últimas series de Marvel</Header>
+                            <ListSeries listSeries={listSeries}/>
+                        </Container>
+                    </Grid.Column>
+                </Grid>
+            </div>
         </div>
     );
 }
