@@ -8,9 +8,18 @@ export default function Comics() {
     const [renderComics, setRenderComics]= useState(10);
     
     const ListComics= useFetch('http://gateway.marvel.com/v1/public/comics?ts=1&apikey=952b42a104ba53bca224cbe292cb0948&hash=13045efc8851c7dcf8beca0aeb852c33&limit=${renderComics}');
+    console.log(ListComics);
     return(
-        <div>
-            <p>Estamos en Comics, pronto realizaremos unos cambios</p>
+        <div className="comics-page">
+            <div id="slide-comics-image">
+            <Grid>
+                <Grid.Column>
+                    <Container bg="light">
+                        <Header as="h2">Los mejores Comics</Header>
+                    </Container>
+                </Grid.Column>
+            </Grid>
+            </div>
         </div>
     );
 }
