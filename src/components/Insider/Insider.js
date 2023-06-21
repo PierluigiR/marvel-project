@@ -17,7 +17,10 @@ export default function Insider() {
                         Consigue puntuación haciendo lo que más te gusta
                     </Header>
                     <div className="container-insider-content-button">
-                        <Button>Únete ahora</Button>
+                        <Button
+                            href="https://developer.marvel.com/"
+                            target="_blank"
+                        >Únete ahora</Button>
                     </div>
                 </Grid.Column>
             </Grid>
